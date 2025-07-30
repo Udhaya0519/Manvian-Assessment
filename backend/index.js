@@ -13,9 +13,6 @@ app.use("/users", userRoutes);
 app.use("/api/leave", leaveRoutes);
 
 
-const PORT = 3000;
-
-app.listen(PORT, () => {
-    console.log("Server running at port", PORT);
-    
+app.get("/", (req,res) => {
+    res.json({message: "server running successfully"})
 })
