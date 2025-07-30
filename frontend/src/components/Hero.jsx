@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 function Hero() {
@@ -13,13 +14,13 @@ function Hero() {
                   View all registered users, apply for leave and Check the
                   status of your leave applications.
                </p>
-               <a href="/register">
+               <Link to="/register">
                    <button
                       className="btn btn-primary"
                    >
                       Get Started
                    </button>
-               </a>
+               </Link>
             </div>
          </div>
       </div>
