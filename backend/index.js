@@ -16,3 +16,5 @@ app.use("/api/leave", leaveRoutes);
 app.get("/", (req,res) => {
     res.json({message: "server running successfully"})
 })
+
+export default app;
